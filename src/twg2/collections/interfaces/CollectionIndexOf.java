@@ -4,7 +4,7 @@ package twg2.collections.interfaces;
  * @author TeamworkGuy2
  * @since 2016-06-23
  */
-public interface CollectionSearchIndexed<T> extends Sized, CollectionSearch<T> {
+public interface CollectionIndexOf<T> extends Sized, CollectionContains<T> {
 
 	/** Check if the specified value is contained in this searchable group of values
 	 * @param value the value to search for

@@ -31,7 +31,7 @@ public interface RandomAccessCollection<T> extends Sized, RandomAccess, Iterable
 
 
 	@Override
-	Iterator<T> iterator();
+	public Iterator<T> iterator();
 
 
 	@Override

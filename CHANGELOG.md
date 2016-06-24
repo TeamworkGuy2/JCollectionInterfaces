@@ -9,9 +9,9 @@ This project does its best to adhere to [Semantic Versioning](http://semver.org/
 * Initial commit of existing interfaces moved from the JCollectionFiller library to this one.
 * Includes:
   * CollectionAdd
+  * CollectionContains
+  * CollectionIndexOf
   * CollectionRemove
-  * CollectionSearch
-  * CollectionSearchIndexed
   * MapIndexed
   * ModifiableCollection
   * ModifiableMapIndexed
