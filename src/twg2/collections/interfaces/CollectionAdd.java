@@ -20,11 +20,11 @@ public interface CollectionAdd<E> {
 
 	/**
 	 * @param elems the collection of elements to add to this collection
-	 * @return true if all of the elements were removed successfully. This return value is used by
+	 * @return true if all of the elements were added successfully. This return value is used by
 	 * collections that do not allow duplicate values, false is only returned if the collection
 	 * already contains {@code elem} and does not allow duplicate elements.
 	 * @see Collection#addAll(Collection)
 	 */
-	public boolean addAll(Collection<? extends E> elems);
+	public boolean addAll(Iterable<? extends E> elems);
 
 }

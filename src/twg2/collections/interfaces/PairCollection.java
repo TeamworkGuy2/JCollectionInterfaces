@@ -13,16 +13,16 @@ import java.util.Map;
  */
 public interface PairCollection<K, V> extends PairCollectionImmutable<K, V> {
 
-	/** clear, removes all key-value pairs from this instance
+	/** Removes all key-value pairs from this instance
 	 */
 	public void clear();
 
 
-	/** put
-	 * Always returns null because duplicate keys are allowed so all key-value pair passed to this method
+	/** Always returns null because duplicate keys are allowed so all key-value pair passed to this method
 	 * are added
 	 * @param key key to add to this PairList instance
 	 * @param value value to add to this PairList instance
+	 * @return null because duplicate keys are allowed so all key-value pairs passed to this method are added
 	 */
 	public V put(K key, V value);
 
@@ -36,21 +36,19 @@ public interface PairCollection<K, V> extends PairCollectionImmutable<K, V> {
 	public void add(Map.Entry<? extends K, ? extends V> keyValue);
 
 
-	/** putAll
-	 * Adds all of the pairs in the mapPairs parameter to this PairList instance
+	/** Adds all of the pairs in the mapPairs parameter to this PairList instance
 	 * @param mapPairs map to add to this PairList instance
 	 */
 	public void putAll(Map<? extends K, ? extends V> mapPairs);
 
 
-	/** putAll
-	 * Adds all of the pairs in the listPairs to this PairList instance
+	/** Adds all of the pairs in the listPairs to this PairList instance
 	 * @param listPairs pairList to add to this pairList
 	 */
-	public void putAll(PairCollection<? extends K, ? extends V> listPairs);
+	public void putAll(PairCollectionImmutable<? extends K, ? extends V> listPairs);
 
 
-	/** remove
+	/** Removes the first key-value pair matched by the given key
 	 * @param key key to remove along with it's corresponding value
 	 * @return the previous value associated with the deleted key
 	 */

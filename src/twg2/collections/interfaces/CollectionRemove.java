@@ -9,7 +9,7 @@ import java.util.Collection;
 public interface CollectionRemove<E> {
 
 	/**
-	 * @param elem the element to add to this collection
+	 * @param elem the element to remove from this collection
 	 * @return true if the element was removed successfully
 	 * @see Collection#remove(Object)
 	 */
@@ -17,11 +17,11 @@ public interface CollectionRemove<E> {
 
 
 	/**
-	 * @param elems the collection of elements to add to this collection
+	 * @param elems the collection of elements to remove from this collection
 	 * @return true if all of the elements were removed successfully
 	 * @see Collection#removeAll(Collection)
 	 */
-	public boolean removeAll(Collection<? extends E> elems);
+	public boolean removeAll(Iterable<? extends E> elems);
 
 
 	/** Remove all elements from a collection
