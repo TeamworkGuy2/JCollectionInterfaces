@@ -11,7 +11,7 @@ import java.util.Map;
  * be self explanatory.
  * This is basically a {@code List<Map.Entry<K, V>>} with the ability to store duplicate key-value pairs.
  */
-public interface PairCollection<K, V> extends PairCollectionImmutable<K, V> {
+public interface PairCollection<K, V> extends PairCollectionReadOnly<K, V> {
 
 	/** Removes all key-value pairs from this instance
 	 */
@@ -45,7 +45,7 @@ public interface PairCollection<K, V> extends PairCollectionImmutable<K, V> {
 	/** Adds all of the pairs in the listPairs to this PairList instance
 	 * @param listPairs pairList to add to this pairList
 	 */
-	public void putAll(PairCollectionImmutable<? extends K, ? extends V> listPairs);
+	public void putAll(PairCollectionReadOnly<? extends K, ? extends V> listPairs);
 
 
 	/** Removes the first key-value pair matched by the given key

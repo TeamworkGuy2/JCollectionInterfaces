@@ -1,5 +1,5 @@
 {
-	"version" : "0.2.0",
+	"version" : "0.3.0",
 	"name" : "jcollection-interfaces",
 	"description" : "Expose your Java collection API modularly with interfaces mimicking java.util collections.",
 	"homepage" : "https://github.com/TeamworkGuy2/JCollectionFiller",

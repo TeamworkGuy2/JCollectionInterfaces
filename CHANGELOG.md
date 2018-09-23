@@ -4,7 +4,16 @@ This project does its best to adhere to [Semantic Versioning](http://semver.org/
 
 
 --------
-### [0.2.0](N/A) - 2017-09-16
+### [0.3.0](N/A) - 2018-09-23
+#### Added
+* `ListReadOnly` which implements all read-only java.util.List methods
+
+#### Changed
+* Renamed `PairCollectionImmutable` -> `PairCollectionReadOnly`
+
+
+--------
+### [0.2.0](https://github.com/TeamworkGuy2/JCollectionInterfaces/commit/a443cd439d35d4b2fca1881cce90dce3f352519e) - 2017-09-16
 #### Changed
 * CollectionAdd.addAll(Collection) -> addAll(Iterable)
 * collectionRemove.removeAll(Collection) -> removeAll(Iterable)
